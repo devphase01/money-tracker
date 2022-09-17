@@ -1,0 +1,77 @@
+@use '../../../../scss/index' as *;
+
+.record {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding: 10px 5px;
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    margin-right: 10px;
+
+    &-icon {
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    color: $black-color;
+  }
+
+  &__account {
+    display: flex;
+    align-items: center;
+
+    div {
+      width: 10px;
+      height: 10px;
+
+      background-color: #039BE5;
+      border-radius: 50%;
+
+      margin-right: 5px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__amount {
+    font-weight: 500;
+
+    &.Expense {
+      color: #FE7268;
+    }
+
+    &.Income {
+      color: #28CC8B;
+    }
+  }
+
+  &__date {
+    color: #8B9AAD;
+    font-size: 12px;
+    align-self: flex-end;
+  }
+}

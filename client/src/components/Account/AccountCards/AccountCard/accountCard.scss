@@ -1,0 +1,57 @@
+@use '../../../../scss/index' as *;
+
+.account {
+  width: 240px;
+  border-radius: 5px;
+
+  padding: 8px 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  position: relative;
+  
+  &__icon {
+    font-size: 20px;
+    margin-top: 5px;
+
+    color: #FFFFFF;
+  }
+
+  &__type {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+  }
+
+  &__amount {
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+
+  &__edit {
+    font-size: 18px;
+
+    position: absolute;
+    top: 7px;
+    right: 7px;
+
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+
+    transition-property: opacity, color;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .account__edit {
+      opacity: 1;
+    }
+  }
+}

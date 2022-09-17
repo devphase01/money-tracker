@@ -1,0 +1,46 @@
+@use '../../../scss/index' as *;
+
+.account-cards {
+  width: 100%;
+  background-color: #FAFBFC;
+
+  padding: 2rem 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__add-btn {
+    width: 240px;
+
+    border: 2px dashed;
+    border-color: #E6EAED;
+    border-radius: 5px;
+
+    transition: border-color 0.3s ease;
+
+    span {
+      color: #9FABBB;
+      transition: color 0.3s ease;
+    }
+
+    &:hover {
+      cursor: pointer;
+      border-color: $blue-btn-color;
+
+      span {
+        color: $blue-btn-color;
+      }
+    }
+  }
+}

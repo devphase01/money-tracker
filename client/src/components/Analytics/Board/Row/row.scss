@@ -1,0 +1,54 @@
+@use '../../../../scss/index' as *;
+
+.board__row {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 60px 1fr 5fr repeat(4, 1fr);
+
+  background-color: #FCFCFC;
+  border-bottom: 1px solid #E8E9E9;
+
+  padding: 10px 0;
+
+  &-category {
+    grid-column: 1;
+    justify-self: center;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      padding: 10px 10px;
+      border-radius: 50%;
+    }
+  }
+
+  &-icon {
+    color: #FFFFFF;
+    font-size: 16px;
+  }
+
+  &-income {
+    grid-column: 2;
+    font-size: 15px;
+    color: $black-color;
+  }
+
+  &-current {
+    grid-column: 4;
+    color: $black-color;
+    font-size: 14px;
+  }
+
+  &-previous {
+    grid-column: 6;
+    color: $black-color;
+    font-size: 14px;
+  }
+
+  &:hover {
+    background-color: #EFF0F2;
+    cursor: pointer;
+  }
+}

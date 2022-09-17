@@ -1,0 +1,55 @@
+@use '../../../scss/index' as *;
+
+.create-board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px dashed #CCD2DB;
+  background: none;
+
+  transition: border-color 0.2s ease;
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1rem;
+  }
+
+  &__circle {
+    padding: 7px 14px;
+    background-color: #CCD2DB;
+    border-radius: 50%;
+
+    transition: background-color 0.2s ease;
+
+    span {
+      color: #FFFFFF;
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    color: #CCD2DB;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+
+    transition: color 0.2s ease;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    border-color: $blue-btn-color;
+
+    .create-board__circle {
+      background-color: $blue-btn-color;
+    }
+
+    .create-board__text {
+      color: $blue-btn-color;
+    }
+  }
+}

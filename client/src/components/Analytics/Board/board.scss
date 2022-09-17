@@ -1,0 +1,71 @@
+@use '../../../scss/index' as *;
+
+.board {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 32px;
+    font-weight: 500;
+
+    color: $black-color;
+    align-self: center;
+  }
+
+  &__total {
+    font-size: 24px;
+    font-weight: 500;
+
+    color: $black-color;
+  }
+
+  &__date {
+    color: #8B9AAD;
+    font-size: 15px;
+
+    margin-bottom: 5px;
+  }
+
+  &__table {
+    margin-top: 3rem;
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: 60px 1fr 5fr repeat(4, 1fr);
+
+    background-color: #EFF0F2;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2), 0px 2px 3px #EFF0F2;
+
+    padding: 1rem 0;
+    
+    position: relative;
+    z-index: 10;
+  }
+
+  &__income, &__expense {
+    grid-column: 2;
+
+    font-weight: 500;
+
+    color: $black-color;
+  }
+
+  &__current {
+    grid-column: 4;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__previous {
+    grid-column: 6;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__rows {
+    display: grid;
+  }
+}

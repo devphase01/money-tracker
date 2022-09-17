@@ -1,0 +1,20 @@
+
+.analytics {
+  margin-top: calc(64px + 2rem);
+  width: 100%;
+
+  &__header {
+    width: 100%;
+    background-color: #F9F9F9;
+    border-radius: 7px 7px 0px 0px;
+
+    padding: 1rem 3rem;
+  }
+
+  &__content {
+    width: 100%;
+    background-color: #FFFFFF;
+
+    padding: 3rem 3rem;
+  }
+}

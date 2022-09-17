@@ -1,0 +1,10 @@
+@use '../../../scss/index' as *;
+
+.records {
+  padding: 1rem;
+  
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
